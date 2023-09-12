@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Codilar_Inconsistency::Inconsistency"
+             title="Codilar"
+             module="Codilar_Inconsistency"
+             sortOrder="15"
+             resource="Codilar_Inconsistency::Inconsistency"/>
+
+        <add id="Codilar_Inconsistency::Inconsistenct_sku"
+             title="Inconsistent SKU"
+             module="Codilar_Inconsistency"
+             parent="Codilar_Inconsistency::Inconsistency"
+             action="inconsistency/inconsistency/index"
+             sortOrder="10"
+             resource="Codilar_Inconsistency::Inconsistenct_sku"/>
+    </menu>
+</config>
