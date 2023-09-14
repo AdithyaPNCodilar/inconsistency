@@ -1,4 +1,5 @@
 <?php
+
 namespace Codilar\Inconsistency\Model\ResourceModel;
 
 use Magento\Framework\Model\ResourceModel\Db\AbstractDb;

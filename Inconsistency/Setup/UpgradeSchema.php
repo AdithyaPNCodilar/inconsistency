@@ -28,7 +28,7 @@ class UpgradeSchema implements UpgradeSchemaInterface
                                 WHERE 
                                     cpe.sku IN (SELECT DISTINCT sku FROM inventory_reservation)";
                 $setup->getConnection()->query($viewSql);    
-                // Add custom id column with primary key and auto increment
+                // custom id column with primary key and auto increment
                 $setup->getConnection()->query(
                     "ALTER TABLE inv_custom_data
                     ADD COLUMN id INT NOT NULL AUTO_INCREMENT,

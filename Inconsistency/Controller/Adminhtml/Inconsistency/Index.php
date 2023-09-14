@@ -52,7 +52,7 @@ class Index extends Action implements HttpGetActionInterface
     {
         $resultPage = $this->resultPageFactory->create();
         $resultPage->setActiveMenu('Codilar_Inconsistency::Codilar');
-        $resultPage->getConfig()->getTitle()->prepend(__('INCONSISTENCY'));
+        $resultPage->getConfig()->getTitle()->prepend(__('Inconsistent Products'));
 
         return $resultPage;
     }
